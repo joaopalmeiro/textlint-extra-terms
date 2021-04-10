@@ -1,0 +1,36 @@
+{
+  "name": "textlint-extra-terms",
+  "version": "0.0.1",
+  "description": "List of extra terms to be used with textlint and textlint-rule-terminology.",
+  "main": "terms.json",
+  "scripts": {
+    "release": "np",
+    "textlint": "textlint -f pretty-error README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopalmeiro/textlint-extra-terms.git"
+  },
+  "keywords": [
+    "textlint",
+    "misspelling",
+    "proofreading",
+    "terminology",
+    "terms"
+  ],
+  "author": {
+    "name": "João Palmeiro",
+    "email": "jm.palmeiro@campus.fct.unl.pt",
+    "url": "https://twitter.com/joaompalmeiro"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaopalmeiro/textlint-extra-terms/issues"
+  },
+  "homepage": "https://github.com/joaopalmeiro/textlint-extra-terms#readme",
+  "devDependencies": {
+    "np": "^7.4.0",
+    "textlint": "^11.9.0",
+    "textlint-rule-terminology": "^2.1.5"
+  }
+}

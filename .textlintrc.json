@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "terminology": {
+      "defaultTerms": true,
+      "terms": "./terms.json",
+      "exclude": [
+        "web[- ]?site(s)?"
+      ]
+    }
+  }
+}
