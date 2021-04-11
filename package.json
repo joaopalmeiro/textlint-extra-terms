@@ -5,7 +5,8 @@
   "main": "terms.json",
   "scripts": {
     "release": "np",
-    "textlint": "textlint -f pretty-error README.md"
+    "textlint": "textlint -f pretty-error README.md",
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,11 @@
   },
   "homepage": "https://github.com/joaopalmeiro/textlint-extra-terms#readme",
   "devDependencies": {
+    "mocha": "^8.3.2",
     "np": "^7.4.0",
+    "prettier": "^2.2.1",
     "textlint": "^11.9.0",
-    "textlint-rule-terminology": "^2.1.5"
+    "textlint-rule-terminology": "^2.1.5",
+    "textlint-tester": "^5.3.4"
   }
 }
