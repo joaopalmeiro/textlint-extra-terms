@@ -4,7 +4,16 @@
   // ["D3[ .]js", "D3"],
   ["D3(?:[ .]?js)?", "D3"],
   "Altair",
+  "Matplotlib",
+  "Vega",
+  // ["Vega[-_ ]?Lite", "Vega-Lite"],
+  ["Vega[-_]?Lite", "Vega-Lite"],
 
   // Python
-  "NumPy"
+  "NumPy",
+  "GeoPandas",
+  "IPython",
+  "SciPy",
+  "SymPy",
+  "TensorFlow"
 ]

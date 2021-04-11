@@ -28,6 +28,31 @@ const d3Invalids = d3Terms.map((term) => {
 	};
 });
 
+const vegaLiteTerms = [
+	'vega-lite',
+	'VEGA-LITE',
+	'Vega-lite',
+	'vega_lite',
+	'VEGA_LITE',
+	'Vega_lite',
+	'vegalite',
+	'VEGALITE',
+	'Vegalite',
+	'vegaLite',
+];
+
+const vegaLiteInvalids = vegaLiteTerms.map((term) => {
+	return {
+		text: term,
+		output: 'Vega-Lite',
+		errors: [
+			{
+				message: `Incorrect usage of the term: “${term}”, use “Vega-Lite” instead`,
+			},
+		],
+	};
+});
+
 const tester = new TextLintTester();
 
 const testConfig = {
@@ -43,6 +68,7 @@ const testConfig = {
 };
 
 tester.run('extra-terms', testConfig, {
+	// More info: https://github.com/sapegin/textlint-rule-terminology/blob/master/test.js#L198
 	valid: [
 		{
 			text: 'D3',
@@ -52,6 +78,30 @@ tester.run('extra-terms', testConfig, {
 		},
 		{
 			text: 'NumPy',
+		},
+		{
+			text: 'Matplotlib',
+		},
+		{
+			text: 'GeoPandas',
+		},
+		{
+			text: 'Vega',
+		},
+		{
+			text: 'Vega-Lite',
+		},
+		{
+			text: 'IPython',
+		},
+		{
+			text: 'SciPy',
+		},
+		{
+			text: 'SymPy',
+		},
+		{
+			text: 'TensorFlow',
 		},
 	],
 	invalid: [
@@ -103,6 +153,207 @@ tester.run('extra-terms', testConfig, {
 			errors: [
 				{
 					message: 'Incorrect usage of the term: “Numpy”, use “NumPy” instead',
+				},
+			],
+		},
+		// Matplotlib
+		{
+			text: 'matplotlib',
+			output: 'Matplotlib',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “matplotlib”, use “Matplotlib” instead',
+				},
+			],
+		},
+		{
+			text: 'MATPLOTLIB',
+			output: 'Matplotlib',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “MATPLOTLIB”, use “Matplotlib” instead',
+				},
+			],
+		},
+		// GeoPandas
+		{
+			text: 'geopandas',
+			output: 'GeoPandas',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “geopandas”, use “GeoPandas” instead',
+				},
+			],
+		},
+		{
+			text: 'GEOPANDAS',
+			output: 'GeoPandas',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “GEOPANDAS”, use “GeoPandas” instead',
+				},
+			],
+		},
+		{
+			text: 'Geopandas',
+			output: 'GeoPandas',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “Geopandas”, use “GeoPandas” instead',
+				},
+			],
+		},
+		// Vega
+		{
+			text: 'vega',
+			output: 'Vega',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “vega”, use “Vega” instead',
+				},
+			],
+		},
+		{
+			text: 'VEGA',
+			output: 'Vega',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “VEGA”, use “Vega” instead',
+				},
+			],
+		},
+		// Vega-Lite
+		...vegaLiteInvalids,
+		// IPython
+		{
+			text: 'ipython',
+			output: 'IPython',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “ipython”, use “IPython” instead',
+				},
+			],
+		},
+		{
+			text: 'iPython',
+			output: 'IPython',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “iPython”, use “IPython” instead',
+				},
+			],
+		},
+		{
+			text: 'Ipython',
+			output: 'IPython',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “Ipython”, use “IPython” instead',
+				},
+			],
+		},
+		{
+			text: 'IPYTHON',
+			output: 'IPython',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “IPYTHON”, use “IPython” instead',
+				},
+			],
+		},
+		// SciPy
+		{
+			text: 'scipy',
+			output: 'SciPy',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “scipy”, use “SciPy” instead',
+				},
+			],
+		},
+		{
+			text: 'SCIPY',
+			output: 'SciPy',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “SCIPY”, use “SciPy” instead',
+				},
+			],
+		},
+		{
+			text: 'Scipy',
+			output: 'SciPy',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “Scipy”, use “SciPy” instead',
+				},
+			],
+		},
+		// SymPy
+		{
+			text: 'sympy',
+			output: 'SymPy',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “sympy”, use “SymPy” instead',
+				},
+			],
+		},
+		{
+			text: 'SYMPY',
+			output: 'SymPy',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “SYMPY”, use “SymPy” instead',
+				},
+			],
+		},
+		{
+			text: 'Sympy',
+			output: 'SymPy',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “Sympy”, use “SymPy” instead',
+				},
+			],
+		},
+		// TensorFlow
+		{
+			text: 'tensorflow',
+			output: 'TensorFlow',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “tensorflow”, use “TensorFlow” instead',
+				},
+			],
+		},
+		{
+			text: 'TENSORFLOW',
+			output: 'TensorFlow',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “TENSORFLOW”, use “TensorFlow” instead',
+				},
+			],
+		},
+		{
+			text: 'Tensorflow',
+			output: 'TensorFlow',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “Tensorflow”, use “TensorFlow” instead',
 				},
 			],
 		},
