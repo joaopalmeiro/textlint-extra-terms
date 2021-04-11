@@ -15,5 +15,8 @@
   "IPython",
   "SciPy",
   "SymPy",
-  "TensorFlow"
+  "TensorFlow",
+  "PyTorch",
+  "LightGBM",
+  "XGBoost"
 ]

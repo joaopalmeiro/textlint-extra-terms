@@ -103,6 +103,15 @@ tester.run('extra-terms', testConfig, {
 		{
 			text: 'TensorFlow',
 		},
+		{
+			text: 'PyTorch',
+		},
+		{
+			text: 'LightGBM',
+		},
+		{
+			text: 'XGBoost',
+		},
 	],
 	invalid: [
 		// D3
@@ -354,6 +363,129 @@ tester.run('extra-terms', testConfig, {
 				{
 					message:
 						'Incorrect usage of the term: “Tensorflow”, use “TensorFlow” instead',
+				},
+			],
+		},
+		// PyTorch
+		{
+			text: 'pytorch',
+			output: 'PyTorch',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “pytorch”, use “PyTorch” instead',
+				},
+			],
+		},
+		{
+			text: 'PYTORCH',
+			output: 'PyTorch',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “PYTORCH”, use “PyTorch” instead',
+				},
+			],
+		},
+		{
+			text: 'Pytorch',
+			output: 'PyTorch',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “Pytorch”, use “PyTorch” instead',
+				},
+			],
+		},
+		// LightGBM
+		{
+			text: 'lightgbm',
+			output: 'LightGBM',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “lightgbm”, use “LightGBM” instead',
+				},
+			],
+		},
+		{
+			text: 'LIGHTGBM',
+			output: 'LightGBM',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “LIGHTGBM”, use “LightGBM” instead',
+				},
+			],
+		},
+		{
+			text: 'LightGbm',
+			output: 'LightGBM',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “LightGbm”, use “LightGBM” instead',
+				},
+			],
+		},
+		{
+			text: 'lightGBM',
+			output: 'LightGBM',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “lightGBM”, use “LightGBM” instead',
+				},
+			],
+		},
+		// XGBoost
+		{
+			text: 'xgboost',
+			output: 'XGBoost',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “xgboost”, use “XGBoost” instead',
+				},
+			],
+		},
+		{
+			text: 'XGBOOST',
+			output: 'XGBoost',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “XGBOOST”, use “XGBoost” instead',
+				},
+			],
+		},
+		{
+			text: 'Xgboost',
+			output: 'XGBoost',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “Xgboost”, use “XGBoost” instead',
+				},
+			],
+		},
+		{
+			text: 'XGboost',
+			output: 'XGBoost',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “XGboost”, use “XGBoost” instead',
+				},
+			],
+		},
+		{
+			text: 'xgBoost',
+			output: 'XGBoost',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “xgBoost”, use “XGBoost” instead',
 				},
 			],
 		},
