@@ -1,5 +1,7 @@
 # textlint-extra-terms
 
+[![npm](https://img.shields.io/npm/v/textlint-extra-terms.svg)](https://www.npmjs.com/package/textlint-extra-terms)
+
 List of extra terms to be used with [textlint](https://github.com/textlint/textlint) and [textlint-rule-terminology](https://github.com/sapegin/textlint-rule-terminology).
 
 ## Usage
@@ -20,6 +22,7 @@ List of extra terms to be used with [textlint](https://github.com/textlint/textl
 ## Development
 
 - `yarn install`.
+- `yarn test`.
 - Release: `npx np` ([source](https://github.com/sindresorhus/np/issues/507#issuecomment-807266088)).
 
 ## References
