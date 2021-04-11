@@ -17,6 +17,11 @@ List of extra terms to be used with [textlint](https://github.com/textlint/textl
 }
 ```
 
+## Development
+
+- `yarn install`.
+- Release: `npx np` ([source](https://github.com/sindresorhus/np/issues/507#issuecomment-807266088)).
+
 ## References
 
 - [textlint](https://github.com/textlint/textlint) ([website](https://textlint.github.io/)).
