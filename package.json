@@ -1,6 +1,6 @@
 {
   "name": "textlint-extra-terms",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "List of extra terms to be used with textlint and textlint-rule-terminology.",
   "main": "terms.json",
   "scripts": {
