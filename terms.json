@@ -8,6 +8,8 @@
   "Vega",
   // ["Vega[-_ ]?Lite", "Vega-Lite"],
   ["Vega[-_]?Lite", "Vega-Lite"],
+  "Bokeh",
+  "HoloViews",
 
   // Python
   "NumPy",
@@ -18,5 +20,6 @@
   "TensorFlow",
   "PyTorch",
   "LightGBM",
-  "XGBoost"
+  "XGBoost",
+  "Keras"
 ]

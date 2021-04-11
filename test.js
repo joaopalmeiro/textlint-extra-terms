@@ -112,6 +112,15 @@ tester.run('extra-terms', testConfig, {
 		{
 			text: 'XGBoost',
 		},
+		{
+			text: 'Keras',
+		},
+		{
+			text: 'Bokeh',
+		},
+		{
+			text: 'HoloViews',
+		},
 	],
 	invalid: [
 		// D3
@@ -486,6 +495,75 @@ tester.run('extra-terms', testConfig, {
 				{
 					message:
 						'Incorrect usage of the term: “xgBoost”, use “XGBoost” instead',
+				},
+			],
+		},
+		// Keras
+		{
+			text: 'keras',
+			output: 'Keras',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “keras”, use “Keras” instead',
+				},
+			],
+		},
+		{
+			text: 'KERAS',
+			output: 'Keras',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “KERAS”, use “Keras” instead',
+				},
+			],
+		},
+		// Bokeh
+		{
+			text: 'bokeh',
+			output: 'Bokeh',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “bokeh”, use “Bokeh” instead',
+				},
+			],
+		},
+		{
+			text: 'BOKEH',
+			output: 'Bokeh',
+			errors: [
+				{
+					message: 'Incorrect usage of the term: “BOKEH”, use “Bokeh” instead',
+				},
+			],
+		},
+		// HoloViews
+		{
+			text: 'holoviews',
+			output: 'HoloViews',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “holoviews”, use “HoloViews” instead',
+				},
+			],
+		},
+		{
+			text: 'HOLOVIEWS',
+			output: 'HoloViews',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “HOLOVIEWS”, use “HoloViews” instead',
+				},
+			],
+		},
+		{
+			text: 'Holoviews',
+			output: 'HoloViews',
+			errors: [
+				{
+					message:
+						'Incorrect usage of the term: “Holoviews”, use “HoloViews” instead',
 				},
 			],
 		},
