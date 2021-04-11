@@ -1,10 +1,10 @@
 [
-  // Data Visualization packages
+  // Data Visualization
   // ["D3(?:js)?", "D3"],
   // ["D3[ .]js", "D3"],
   ["D3(?:[ .]?js)?", "D3"],
   "Altair",
 
-  // Python packages
+  // Python
   "NumPy"
 ]
